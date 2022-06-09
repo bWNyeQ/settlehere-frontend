@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div id="top">
+        <div>
+            <i class='bx bx-menu-alt-left'></i>
+        </div>
+        <h3>Your to-do</h3>
+    </div>
+
+    <div class="todo">
+        <div *ngFor="let i of this.items" class="item">
+            <app-item [itemType]="i"></app-item>
+            <p>Main goal 1</p>
+        </div>
+        
+    </div>
+</div>
